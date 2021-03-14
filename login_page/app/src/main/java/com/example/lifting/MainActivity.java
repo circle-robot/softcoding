@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.textfield.TextInputEditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -11,6 +12,8 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,10 +33,25 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 //    }
+
+//    TextInputEditText email_input, password_input;
+    EditText email_input, password_input;
+    Button native_button_btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        email_input = findViewById(R.id.email_input);
+        password_input = findViewById(R.id.password_input);
+
+        native_button_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            String email = email_input.getText().toString();
+            String pw = password_input.getText().toString();
+            }
+        });
     }
 
     @Override
