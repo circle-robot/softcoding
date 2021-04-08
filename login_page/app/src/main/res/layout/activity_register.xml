@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".register">
+    tools:context=".registerActivity">
 
     <TextView
         android:id="@+id/textView4"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4"></EditText>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/check_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -52,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5"></EditText>
+        app:layout_constraintTop_toBottomOf="@+id/check_btn"></EditText>
 
     <LinearLayout
         android:id="@+id/gen_btn"
@@ -89,11 +89,11 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/nickname_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:hint="Nick name"
+        android:hint="별명"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gen_btn"></EditText>
@@ -104,7 +104,7 @@
         android:layout_height="wrap_content"
         android:weightSum="10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText7">
+        app:layout_constraintTop_toBottomOf="@+id/nickname_input">
 
         <EditText
             android:id="@+id/height_input"
